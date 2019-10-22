@@ -1,0 +1,55 @@
+<?php
+
+
+if(empty($submit))
+{
+include ("../sql_function/connect.php");
+
+	$tb_mentor_id=$_POST['tb_mentor_id'];
+	$tb_mentor_id_log=$_POST['tb_mentor_id_log'];
+	$tb_mentor_password=$_POST['tb_mentor_password'];
+	$tb_prefix_id=$_POST['tb_prefix_id'];
+	$tb_mentor_name=$_POST['tb_mentor_name'];
+	$tb_mentor_lastname=$_POST['tb_mentor_lastname'];
+	$tb_mentor_email=$_POST['tb_mentor_email'];
+	$tb_mentor_tel=$_POST['tb_mentor_tel'];
+	$tb_lo_id=$_POST['tb_lo_id'];
+
+$sql = "UPDATE  tb_mentor SET tb_mentor_id = '$tb_mentor_id', tb_mentor_id_log = '$tb_mentor_id_log', 
+tb_mentor_password = '$tb_mentor_password' ,tb_prefix_tb_prefix_id  = '$tb_prefix_id', 
+tb_mentor_name = '$tb_mentor_name', tb_mentor_lastname = '$tb_mentor_lastname',tb_mentor_email= '$tb_mentor_email',
+tb_mentor_tel = '$tb_mentor_tel' ,tb_localtion_tb_lo_id = '$tb_lo_id' 
+WHERE tb_mentor_id = '$tb_mentor_id'";
+
+	mysql_query($sql) or die ("ข้อมูลผิดพลาด".mysql_error());
+	
+	echo "<script>alert('แก้ไขข้อมูลส่วนตัวสำเร็จ');window.history.back();</script>";
+
+							
+}
+
+if($_FILES["fileUpload"]["name"] != "")
+
+			{
+
+			if(move_uploaded_file($_FILES["fileUpload"]["tmp_name"],
+			"../picture/".$_FILES["fileUpload"]["name"]))
+
+			{
+
+			//*** Delete Old File ***//        
+
+			@unlink("../picture/".$_POST["hdnOldFile"]);
+			$sql = "UPDATE tb_mentor ";
+			$sql .=" SET tb_mentor_img = '".$_FILES["fileUpload"]["name"]."' WHERE tb_mentor_id = '$tb_mentor_id'";
+			mysql_query($sql) or die ("ข้อมูลผิดพลาด".mysql_error());
+
+
+
+			}
+
+	}
+
+
+
+?>

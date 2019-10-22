@@ -1,0 +1,40 @@
+--chidclever.site40.net--
+สร้างดาต้าเบสชื่อ db_fst เลือก collation utf8 general_ci
+แล้ว import ไฟล์ db_fst.sql
+81dc9bdb52d04dc20036dbd8313ed055
+////////////////////////////////////////
+xampp เวอรชั่นไหน
+น่าจะเก่ากึก
+ถ้าลง appserve ทับได้ป่ะ จะช
+9voouตอนนี้ 5.6.12 แล้วนะ xamp จะลงใหม่ก็ backup ข้อมูลด้วยละ อ่า แล้ว งานเก่า ไม่รุ้จะรันได้ป่าวเนี่ยสิ
+ปกติแล้ว เวอร์ชั่นหใม่มันจะรองรับของเก่าหมด แต่ลองเอางานเก่าเราไปรันบนเครื่องที่มีเวอรชั่นใหม่ก่อนก้ได้ งั้นบังเอางานผมไปรันดูกอนน่ะ แปปเด่วอัพให้ ถ้าได้ เด่วลงตัวใหม่
+XAMPP for Windows 5.6.12
+https://www.apachefriends.org/index.html
+/////////////////////////////////////////////
+สีฟ้า : #337ab7
+-----
+แถบเมนูขวา
+ <div class="list-group" style="position: relative; left:920px; width:250px;">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+
+---
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7" style="width:500px">
+                <h2 class="featurette-heading" style="width:500px">HTML Code</h2>
+                <p class="lead">Use Jssor Slider as a compoment of Bootstrap is extremly easy. Given a slider you worked out, to integrate it with Bootstrap, you can just copy javascript and html code and paste it into your page. This page is a simple demo, please view source of this page or download <a href="http://www.jssor.com/download-bootstrap-carousel-slider-example.html">Bootstrap Carousel Slider Example</a>.</p>
+                 
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" width="300" height="250" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+        </div>
